@@ -1,0 +1,27 @@
+RewriteEngine On
+
+RewriteRule ^chat?$ index.html
+
+RewriteRule ^about?$ about.php
+
+RewriteRule ^contact?$ contact.php
+
+RewriteRule ^login?$ login.php
+
+RewriteRule ^faqs?$ faqs.php  
+
+RewriteRule ^terms?$ terms.php
+
+RewriteRule ^register?$ register.php
+
+RewriteRule ^support?$ support.php
+
+RewriteRule ^logout?$ logout.php 
+
+RewriteRule ^resetpassword?$ resetpassword.php
+
+RewriteRule ^plans?$ plans.php
+
+RewriteRule ^referral?$ referral.php
+
+RewriteRule ^email-verification?$ email-verification.php 

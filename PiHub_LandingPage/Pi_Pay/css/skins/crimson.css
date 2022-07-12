@@ -1,0 +1,14 @@
+
+.home-section{
+	background-color: #eff4ff;
+	/*#fbf6e9;*/
+}
+.header{
+	background-color:#9f3d8b;
+	border-radius: 0 0 20px 20px;
+}
+
+.mybtn1:hover,
+.mybtn1{
+	background-color: #364059;
+}

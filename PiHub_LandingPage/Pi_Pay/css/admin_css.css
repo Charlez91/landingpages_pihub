@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+.container{
+	position: relative;
+	width: 100%;
+}
+.navigation{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	left: 0px;
+	background: #9f3d8b;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.navigation.active{
+	width: 200px;
+}
+.navigation ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+.navigation ul li{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+.navigation ul li:hover{
+	background: springgreen;
+}
+.navigation ul li:nth-child(1){
+	margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+	background:  transparent;
+}
+.navigation ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #ffffff;
+}
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.navigation ul li a .icon .fa{
+	color: #ffffff;
+	font-size: 24px;
+}
+.navigation ul li a .title{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	white-space: nowrap;
+}
+.main{
+	position: absolute;
+	width: calc(100% - -375px);
+	left: -85px;
+
+	min-height: 100vh;
+	background: #f5f5f5;
+	transition: 0.5s;
+}
+.main.active{
+	/*width: calc(100% - -50px);*/
+	width: 100%;
+	left: -220px;
+}
+.main .topbar{
+	width: 100%;
+	background: #c8a2c8;
+	height: 90px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+span.title h2{
+  color: #FFD700;
+  font-size: 30px;
+  font-weight: 700;
+}
+.toggle{
+position: relative;
+width: 60px;
+height: 60px;
+/*background: red;*/
+cursor: pointer;
+}
+
+.toggle::before{
+	/*\f0c9*/
+	content:'\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	font-size: 50px;
+	text-align: center;
+	color: #111;
+}
+
+.search{
+	position: relative;
+	width: 400px;
+	margin: 0 10px;
+}
+.search label{
+	position: relative;
+	width: 100%;
+}
+.search label input{
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	padding: 5px 20px;
+	padding-left: 45px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search label .fa{
+	position: absolute;
+	left: 15px;
+	top: 12px;
+}
+
+.user{
+	position: relative;
+	min-width: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 40%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.user img{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cardBox{
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.cardBox .card{
+	position: relative;
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.cardBox .card .numbers{
+	position: relative;
+	font-size: 2em;
+	font-weight: 500;
+}
+.cardBox .card .cardName{
+	color: #999;
+}
+.cardBox .card .iconBox{
+	font-size: 2.5em;
+	color: #03a9f4;
+}
+.details{
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	padding-top:0 ;
+	display: grid;
+	grid-gap: 20px;
+	
+}
+.details .recentOrders{
+	position: relative;
+	min-height: 400px;
+	background: #fff;
+	padding: 20px;
+}
+.cardHeader{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.cardHeader h2{
+	font-weight: 600;
+
+}
+
+a.btn{
+	position: relative;
+	padding: 5px 10px;
+	background: #03a9f4;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+}
+.details table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+.details table thead td{
+	font-weight: 600;
+}
+.details .recentOrders table tr{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentOrders table tbody tr:last-child{
+	border-bottom: none;
+}
+.details .recentOrders table tbody tr:hover{
+	background: #03a9f4;
+	color: #fff;
+}
+.details .recentOrders table tr td{
+	padding: 9px 5px;
+}
+.details .recentOrders table thead tr td:last-child,
+.details .recentOrders table tbody tr td:last-child{
+	text-align: right;
+}
+
+.details .recentOrders table thead tr td:nth-child(2),
+.details .recentOrders table tbody tr td:nth-child(2){
+	text-align: right;
+	padding-right: 20px;
+}
+.details .recentOrders table thead tr td:nth-child(3),
+.details .recentOrders table tbody tr td:nth-child(3){
+	text-align: center;
+}
+.status{
+	position: relative;
+	padding: 2px 4px;
+	background: #f00;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 300px;
+	letter-spacing: 1px;
+}
+
+.delivered{
+	background: #8de02c;
+}
+
+.pending{
+	background: #f9ca3f;
+}
+.return{
+	background:#f00;
+}
+.inprogress{
+	background:#1795ce;
+}
+.details .recentCustomers{
+	position: relative;
+	
+	min-height: 400px;
+	background:#fff;
+	padding: 20px;
+}
+.details .recentCustomers .imgBx{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.details .recentCustomers .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.details .recentCustomers table tr td h4 span{
+	font-size: 14px;
+	color: #03a9f4;
+}
+.details .recentCustomers table tr:hover,
+.details .recentCustomers table tr:hover td h4 span{
+	background: #03a9f4;
+	color: #fff;
+}
+.details .recentCustomers table tr td{
+	padding: 7px 10px;
+}
+.details .recentCustomers table tr td h4{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+
+/*Media Query*/
+/*@media(max-width:1125px){
+	navigation{
+		width:200px ;
+		left: 0;
+	}
+
+	.navigation.active{
+		width: calc(100% - 65px);
+		left: 0;
+		
+	}
+	.main{
+		width: -80px;
+		left: 60px;
+	}
+
+	.main.active{
+	width: calc(100% - -200px);
+	left: -70px;
+}
+.cardBox{
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+}
+
+@media(max-width:1075px){
+	.navigation{
+		width: calc(100% - 65px);
+		left: 0;
+	}
+	.navigation.active{
+		width: 165px;
+		left: 0px;
+		
+	}
+	.main{
+		width: -45px;
+		left: 60px;
+	}
+
+	.main.active{
+	width: calc(100% - -200px);
+	left: -105px;
+}
+.cardBox{
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 20px;
+}
+}*/
+@media (max-width:992px){
+	.navigation{
+		width: 165px
+		left: 0;
+	}
+	.navigation.active{
+		width: 100%
+		left: 0;	
+	}
+	.main{
+		width: 100%;
+		left: 120px;
+	}
+	.main.active{
+		width: calc(100% - 90px);
+		left: -45px;
+	}
+	.details{
+	grid-template-columns: repeat(1, 1fr);
+}
+}
+@media(max-width:758px){
+.details{
+	grid-template-columns: repeat(1, 1fr);
+}
+.cardHeader h2{
+	font-weight: 600;
+	font-size: 18px;
+}
+
+@media(max-width:480px){
+.cardBox{
+	grid-template-columns: repeat(1, 1fr);
+}
+.details .recentOrders{
+	overflow-x: auto;
+}
+.details .recentOrders table{
+	width: 600px;
+}
+.navigation{
+	width: 100%;
+	left: -100%;
+	z-index: 1000;
+}
+
+@media(max-width:250px){
+.cardBox{
+	grid-template-columns: repeat(1, 1fr);
+}
+.details .recentOrders{
+	overflow-x: auto;
+}
+.details .recentOrders table{
+	width: 600px;
+}
+.navigation{
+	width: 100%;
+	left: -100%;
+	z-index: 1000;
+}
+.navigation.active{
+	width: 100%;
+	left: 0;
+
+}
+}

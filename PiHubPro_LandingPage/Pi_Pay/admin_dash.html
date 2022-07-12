@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>User Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/admin_css.css">
+	<!-- font-awesome icons -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <!-- owl carousel css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- font-awesome icons -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<div class="container">
+
+	<!-- Start of Navigation -->
+
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="">
+						<span class="icon"><img class="center-block" src="img/ppay2.png"  height="69px" alt="Pi Admin"></span>
+						<span class="title"><h2 style="margin-top: 13px;">PiPay</h2></span>
+					</a>
+				</li>
+				<li>	
+					<a href="#">
+							<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+							<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+						<span class="title">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fas fa-hand-holding-usd" aria-hidden="true"></i></span>
+						<span class="title">Transactions</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+						<span class="title">Settings</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<span class="icon"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span>
+						<span class="title">Sign Out</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!-- End of Navigation -->
+		<!-- Begining of Main -->
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle" onclick="toggleMenu();"></div>
+				<div class="search">
+					<label>
+						<input type="text" placeholder="Search Here">
+						<i class="fa fa-search" aria-hidden="false"></i>
+					</label>
+				</div>
+				<div class="user">
+					<img src="img/user.jpg">
+				</div>
+			</div>
+			<div class="cardBox">
+				<div class="card">
+					<div>
+						<div class="numbers">1,042</div>
+						<div class="cardName"> Daily Views</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-eye" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">80</div>
+						<div class="cardName">Sales</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">208</div>
+						<div class="cardName">Comments</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-comment" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">%82,000</div>
+						<div class="cardName">Earnings</div>
+					</div>
+					<div class="iconBox">
+						<i class="fa fa-usd" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Details Starts Here -->
+			<div class="details">
+				<div class="recentOrders">
+					<div class="cardHeader">
+						<h2>Recent Transactions</h2>
+						<a href="#" class="btn">View All</a>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Price</td>
+								<td>Payments</td>
+								<td>Status</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Star Refrigerator</td>
+								<td>1200</td>
+								<td>Paid</td>
+								<td><span class="status delivered">Delivered</span></td>
+							</tr>
+							<tr>
+								<td>Window Coolers</td>
+								<td>1100</td>
+								<td>Due</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>	<tr>
+								<td>Speakers</td>
+								<td>620</td>
+								<td>Paid</td>
+								<td><span class="status return">Return</span></td>
+							</tr>
+								<tr>
+								<td>HP Laptop</td>
+								<td>6000</td>
+								<td>Due</td>
+								<td><span class="status inprogress">In Progress</span></td>
+							</tr>
+							<tr>
+								<td>Star Refrigerator</td>
+								<td>1200</td>
+								<td>Paid</td>
+								<td><span class="status delivered">Delivered</span></td>
+							</tr>
+								<tr>
+								<td>Window Coolers</td>
+								<td>1100</td>
+								<td>Due</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>	<tr>
+								<td>Speakers</td>
+								<td>620</td>
+								<td>Paid</td>
+								<td><span class="status return">Return</span></td>
+							</tr>
+								<tr>
+								<td>HP Laptop</td>
+								<td>6000</td>
+								<td>Due</td>
+								<td><span class="status inprogress">In Progress</span></td>
+							</tr>
+						</tbody>
+					</table>
+				
+				</div>
+				
+				<div class="recentCustomers">
+					<div class="cardHeader">
+						<h2>Recent Customers</h2>
+						<!-- <a href="#" class="btn">View All </a> -->
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="img/img1.jpeg"></div></td>
+								<td><h4>Seun<br><span>Afghanistan</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="img/img2.jpeg"></div></td>
+								<td><h4>David<br><span>Russia</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="img/img3.jpg"></div></td>
+								<td><h4>Mary<br><span>Holland</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="img/img4.jpeg"></div></td>
+								<td><h4>Mark<br><span>Germany</span></h4></td>
+							</tr>
+							<tr>
+								<td width="60px"><div class="imgBx"><img src="img/img5.jpeg"></div></td>
+								<td><h4>Raymond<br><span>Nigeria</span></h4></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- End of Main -->
+	</div>
+
+<script type="text/javascript">
+	function toggleMenu() {
+		let toggle = document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation');
+		let main = document.querySelector('.main');
+		toggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+		main.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

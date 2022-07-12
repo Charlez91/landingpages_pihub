@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.carded{
+	position: relative;
+	width: 400px;
+	height: 220px;
+	transform-style: preserve-3d;
+	perspective: 500px;
+	background-color: #3e1b58;
+	
+	border-radius: 12px;
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+.carded .face{
+	position: absolute;
+	top: 0;
+	left: o;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.05);
+	/*backdrop-filter: blur(10px);*/
+	transform-style: preserve-3d;
+	transition: 1s;
+	backface-visibility: hidden;
+
+}
+
+.carded:hover .face.front{
+	transform: rotateY(180deg);
+}
+.carded .face.back{
+	transform: rotateY(180deg);
+}
+.carded:hover .face.back{
+	transform: rotateY(360deg);
+}
+.carded .face.front::before{
+	content: '';
+	position: absolute;
+	bottom: 36px;
+	right: 36px;
+	width: 54px;
+	height: 54px;
+	background: #c8a2c8;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+.carded .face.front::after{
+	content: '';
+	position: absolute;
+	bottom: 36px;
+	right: 72px;
+	width: 54px;
+	height: 54px;
+	background: #FFD700;
+	border-radius: 50%;
+	opacity: 0.7;
+}
+
+.carded .face.front .debit{
+	position: absolute;
+	left: 40px;
+	top: 30px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.carded .face.front .bank{
+	position: absolute;
+	right: 40px;
+	top: 25px;
+	color: #FFD700;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.carded .face.front .chip{
+	position: absolute;
+	top: 70px;
+	left: 50px;
+	max-width: 64px;
+}
+
+
+.carded .face.front .number{
+	position: absolute;
+	bottom: 105px;
+	left: 150px;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 4px;
+	font-size: 16px;
+	text-shadow: 0 2px 1px #0005;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.carded .face.front .valid{
+	position: absolute;
+	bottom: 50px;
+	left: 40px;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-weight: 200;
+	line-height: 0.7em;
+	text-align: right;
+}
+
+.carded .face.front .valid span:last-child{
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 2px;
+
+}
+
+.carded .face.front .cardHolder{
+	position: absolute;
+	bottom: 25px;
+	left: 40px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.carded .face.back .blackbar{
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 30px;
+	background: #000;
+}
+
+.carded .face.back .ccvtext{
+	position: absolute;
+	top: 120px;
+	left: 30px;
+}
+
+.carded .face.back .ccvtext h5{
+	color: #fff;
+	font-weight: 400;
+	font-size: 10px;
+	margin-top: -55px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.carded .face.back .ccvtext .whiteBar{
+	position: relative;
+	width: 300px;
+	height: 30px;
+	background: #fff;
+	margin-top: 5px;
+}
+
+.carded .face.back .ccvtext .ccv{
+	position: relative;
+	top: -30px;
+	left: 300px;
+	background: #ccc;
+	color: #fff;
+	width: 50px;
+	height: 30px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carded .face.back .text{
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	right: 30px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.4em;
+	font-weight: 300;
+
+}
+
+@media (max-width:1023px){
+.carded{
+ margin-left: 20px;
+
+ /*width: 390px;
+height: 220px;*/
+ }
+}
+
+
+@media (max-width:991px){
+.carded{
+ margin-left: 150px;
+ margin-top: 20px;
+ width: 340px;
+height: 220px;
+ }
+ .carded .face.back .ccvtext .whiteBar{
+ 	width: 250px;
+ }
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -70px;
+ }
+ .carded .face.back .ccvtext h5{
+ 	margin-top: -60px;
+ }
+  .carded .face.back .text{
+	bottom: -5px;
+}
+}
+@media (max-width:760px){
+.carded{
+ margin-left: 70px;
+ margin-top: 20px;
+ width: 300px;
+height: 220px;
+ }
+ .carded .face.back .ccvtext .whiteBar{
+ 	width: 200px;
+ }
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -110px;
+ }
+ .carded .face.back .ccvtext h5{
+ 	margin-top: -60px;
+ }
+  .carded .face.back .text{
+	bottom: -7px;
+}
+}
+
+@media (max-width:589px){
+.carded{
+ margin-left: 100px;
+ margin-top: 20px;
+ width: 320px;
+height: 220px;
+ }
+ .carded .face.back .ccvtext .whiteBar{
+ 	width: 250px;
+ }
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -70px;
+ }
+ .carded .face.back .ccvtext h5{
+ 	margin-top: -70px;
+ }
+  .carded .face.back .text{
+	bottom: 2px;
+}
+}
+@media (max-width:485px){
+.carded{
+ margin-left: 70px;
+ margin-top: 20px;
+ width: 320px;
+height: 220px;
+ }
+ .carded .face.back .ccvtext .whiteBar{
+ 	width: 250px;
+ }
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -70px;
+ }
+ .carded .face.back .ccvtext h5{
+ 	margin-top: -70px;
+ }
+
+}
+
+@media (max-width:485px){
+	.carded{
+ margin-left: 40px;
+ margin-top: 20px;
+ width: 320px;
+height: 220px;
+ }
+}
+
+ @media (max-width:395px){
+.carded{
+ margin-left: 14px;
+ margin-top: 20px;
+ width: 320px;
+height: 220px;
+ }
+
+}
+
+@media (max-width:360px){
+.carded{
+ margin-left: 15px;
+ margin-top: 20;
+ width: 300px;
+height: 200px;
+
+ }
+  .carded .face.back .ccvtext .whiteBar{
+ 	width: 200px;
+ }
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -100px;
+ }
+ .carded .face.back .text{
+	bottom: -30px;
+}
+.carded .face.front .number{
+	font-size: 10px;
+	padding-top: 55px;
+}
+}
+
+@media (max-width:350px){
+	.carded{
+ margin-left: 15px;
+ margin-top: 20;
+ width: 280px;
+height: 190px;
+
+ }
+ .carded .face.back .ccvtext .whiteBar{
+ 	width: 180px;
+ 	height: 25px;
+ }
+ .carded .face.back .blackbar{
+
+	top: 15px;
+	/*width: 100%;*/
+	height: 25px;
+	/*background: #000;*/
+}
+.carded .face.back .ccvtext h5{
+	
+	margin-top: -75px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+ .carded .face.back .ccvtext .ccv{
+ 	margin-left: -120px;
+ 	height: 25px;
+ 	top: -25px;
+ }
+ .carded .face.front::before{
+ 	width: 30px;
+ 	height: 30px;
+ 	right: 30px;
+ }
+ .carded .face.front::after{
+ 	width: 30px;
+ 	height: 30px;
+ 	right: 50px;
+ }
+ .carded .face.front .cardHolder{
+ 	font-size: 12px;
+ }
+ .carded .face.front .valid{
+ 	font-size: 16px;
+ }
+.carded .face.front .debit{
+	font-size: 20px;
+}
+.carded .face.front .number{
+	left: 100px;
+	bottom: 85px;
+}
+.carded .face.front .chip{
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	max-width: 50px;
+}
+}
+
+@media (max-width:350px){
+	.carded{
+ margin-left: 5px;
+ margin-top: 20;
+ width: 280px;
+height: 190px;
+
+ }
+}
+@media (max-width:320px){
+	.carded{
+ margin-left: 3px;
+ margin-top: 20;
+ width: 280px;
+height: 190px;
+
+ }
+}
