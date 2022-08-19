@@ -53,29 +53,24 @@
 <div class="container-fluid">
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-      <div class="sidebar-sticky pt-3">
+      <div class="sidebar-sticky pt-5">
         <ul class="nav flex-column">
+      
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">
-              <span data-feather="home"></span>
-              <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-              Dashboard <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">
-              <span data-feather="home"></span>
-              <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-              PiHub 
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile.html">
+            <a class="nav-link" href="gettingstarted.html">
               <span data-feather="file"></span>
               <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-              Company's Profile
+              Getting Started
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+              Home
+            </a>
+          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="transaction.html">
               <span data-feather="shopping-cart"></span>
@@ -83,7 +78,41 @@
               Transactions       
             </a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="payout.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+              Payout
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="withdrawal.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+              Withdrawal
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payment.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+              Payment page
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pos.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+              POS(point of sale)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="settings.html">
+              <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+              <span data-feather="users"></span>
+              Settings
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="bar-chart-2"></span>
@@ -92,191 +121,275 @@
             </a>
           </li>     
         </ul>
-        <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span class="new">Saved reports</span>
-          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul> -->
+       
+        </ul>
       </div>
     </nav>
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-      
-              <div class="details">
-                <div class="card mb-3 content">
-                  <div class="cardHeader">
-                    <h2>Profile Settings</h2>
-                 
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <h3> </h3>
-                      </div>
-                      <div class="col-md-7 text-secondary">
-                      </div>
-                      <div class="col-md-5">
-                         <h5> Email :</h5>
-                      </div>
-                      <div class="col-md-7 text-secondary">
-                        <p class="btn btn-primary">Edit</p>
-                      </div>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
 
-                      <div class="col-md-5">
-                         <h5> Password :</h5>
-                      </div>
-                      <div class="col-md-7 text-secondary">
-                        <p class="btn btn-primary">Edit</p>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>
-                    <div class="cardHeader">
-                    <h2>Notifications Settings</h2>
-                     
-                  </div>
-                  <div class="card-body">
-                     <hr>
-                      <div class="row">
-                         
-                        <div class="col-md-5">
-                          <h5>SMS :</h5>
-                        </div>
-                        <div class="col-md-7 text-secondary">
-                         <input type="checkbox" id="switch"><label for="switch">Toggle</label>
-                        </div>
-                    </div>
-                    <hr>
-                      <div class="row">
-                        <div class="col-md-5">
-                          <h5>Email Weekly Sales Report :</h5>
-                        </div>
-                        <div class="col-md-7 text-secondary">
-                         <input type="checkbox" id="sales"><label for="sales">Toggle</label>
-                        </div>
-                    </div>
-                    <hr>
-                      <div class="row">
-                        <div class="col-md-5">
-                          <h5>Generate New API Key :</h5>
-
-                        </div>
-
-                        <div class="col-md-7 text-secondary">
-                          <p class="btn btn-primary">Generate</p><input type="text" name="" disabled>
-                        </div>
-                    </div>
-                     <hr>
-                      
-                </div> 
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-home" aria-selected="true">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-profile" aria-selected="false">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-notification" role="tab" aria-controls="pills-contact" aria-selected="false">Notification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-api" role="tab" aria-controls="pills-contact" aria-selected="false">Api keys and webhooks</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card mb-3 content">
+              <div class="cardHeader">
+                <h2> Profile</h2>
               </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Company Name :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                       <input type="text" name="name" value="Company Name">
+                    </form>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Company Website :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                      <input type="text" name="name" value="company-website">
+                    </form>
+                  </div>
+                </div>
+
+                
+
+                 <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Upload Image:</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                     <input type="file" name="name">
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Contact Person Name :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                      <input type="text" name="name" value="Company Rep">
+                    </form>
+                  </div>
+                </div>
+
+                  <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5> Wallet Address :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                     <input type="text" name="name" value="Pi Wallet Address">
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Contact Person Name :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                      <input type="text" name="name" value="Company Rep">
+                    </form>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5> Contact Person Phone :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                      <input type="text" name="name" value="Rep Phone">
+                    </form>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5> Contact Person Email :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <form>
+                      <input type="text" name="name" value="Rep Email">
+                    </form>
+                  </div>
+                </div>
+
+                <hr>
+
+                 <div class="row">
+                    <div class="col-md-5">
+                      <h5>Company Address :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                      <form>
+                        <input type="text" name="clientaddress" value="No.5 Ojuelegba Bustop Yaba">
+                      </form>
+                    </div>
+                </div>
+
+                <hr>
+
+                 <div class="row">
+                    <div class="col-md-5">
+                      <h5>Company Phone Number :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary"> 
+                      <form>
+                        <input type="text" name="clientphone" value="+234801234567">
+                      </form>
+                    </div>
+                </div>
+
+                 <hr>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h5>Document Submitted :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                      <form>
+                        <input type="text" name="clientphone" value="Not Submitted">
+                      </form>
+                    </div>
+                </div>
+                 <hr>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h5>Account Verified :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                      <form>
+                        <input type="text" name="clientphone" value="Not Verified" >
+                      </form>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="company-update">
+                        <a href="#" class="btn">Update</a>
+                    </div>
+                  </div>
+                </div>
+              
+            </div> 
           </div>
           
-      <!-- Footer Start -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6"> 
-        <div class="footer-col">
-          <h3>About Us</h3>
-          <p>
-            PiPay - A payment gateway for merchants accepting Pi for goods and services.
-          </p>
+        </div>
+        <div class="tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="card mb-3 content">
+              <div class="cardHeader">
+                <h2>Account Settings</h2>
+             
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h3> </h3>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                  </div>
+                  <div class="col-md-5">
+                     <h5> Email :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <p class="btn btn-primary">Edit</p>
+                  </div>
+
+                  <div class="col-md-5">
+                     <h5> Password :</h5>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <p class="btn btn-primary">Edit</p>
+                  </div>
+                </div>
+                <hr>
+              </div>
+                
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-notification" role="tabpanel" aria-labelledby="pills-contact-tab">       
+            <div class="card mb-3 content">
+             
+                <div class="cardHeader">
+                <h2>Notifications Settings</h2>
+                 
+              </div>
+              <div class="card-body">
+                 <hr>
+                  <div class="row">
+                     
+                    <div class="col-md-5">
+                      <h5>SMS :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                     <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+                    </div>
+                </div>
+                <hr>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h5>Email Weekly Sales Report :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                     <input type="checkbox" id="sales"><label for="sales">Toggle</label>
+                    </div>
+                </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-api" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="card mb-3 content">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Generate New API Key :</h5>
+                  </div>
+
+                  <div class="col-md-7 text-secondary">
+                    <p class="btn btn-primary">Generate</p><input type="text" name="" disabled>
+                  </div>
+              </div>
+               <hr>
+        </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-3"> 
-        <div class="footer-col">
-          <h3>Company</h3>
-          <ul>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms and Conditions</a>
-            </li>
-            <li>
-              <a href="#">Latest Blogs</a>
-            </li>
-            <li>
-              <a href="about.html">About US</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6"> 
-        <div class="footer-col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Video Tutorials</a>
-            </li>
-            <li>
-              <a href="#">FAQ's</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6"> 
-        <div class="footer-col">
-          <h3>Social Pages</h3>
-          <ul>
-            <li>
-              
-              <a href="https://facebook.com/pihub.utility/">facebook <i class="fab fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Pihub_Utility?s=80">twitter <i class="fab fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/pihub_utility">instagram <i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/pihub-utility">linkedin <i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="copyright-text">&copy;2021 @ PiHub</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- Footer End -->
+
+    </main>
+          
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
