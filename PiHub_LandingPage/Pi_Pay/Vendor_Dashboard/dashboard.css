@@ -150,7 +150,7 @@ h6 .new {
   margin-top: 30px;
   background-color: #fbf3f3;
 }
-.details .card .cardHeader h2{
+.details .card .cardHeader h3{
   text-align: center;
   margin-left: 400px;
   color: #52a911e0;
@@ -167,8 +167,8 @@ h6 .new {
   align-items: flex-start;
   margin-top: 15px;
 }
-.cardHeader h2{
-  font-weight: 600;
+.cardHeader h3{
+  font-weight: 400;
   margin-left: 15px;
 }
 a.btn{
