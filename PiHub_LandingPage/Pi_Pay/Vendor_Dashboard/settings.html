@@ -32,6 +32,8 @@
       }
     </style>
     <link href="dashboard.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="shortcut icon"  href="assets/dist/img/ppay2.png" />
   </head>
@@ -134,174 +136,92 @@
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="card mb-3 content">
-              <div class="cardHeader">
-                <h2> Profile</h2>
+            <div class="container">
+              <div class="col-lg-8 col-md-7">
+                <div class="cardHeader">
+                  <h2> Profile</h2>
+                </div>
+                <div class="contact-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <h6>Company name</h6>
+                          <input type="text" name="Company name"  class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Name</h6>
+                          <input type="text" name="Contact Person Name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Phone</h6>
+                          <input type="number" name="Contact Person Phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Company Address</h6>
+                          <input type="text" name="Company Address" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <h6>Company website</h6>
+                          <input type="text" name="Company website" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Wallet Address</h6>
+                          <input type="text" name="Wallet Address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Email</h6>
+
+                          <input type="email" name="Contact Person Email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Company Phone Number</h6>
+
+                          <input type="text" name="Company Phone Number" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                  
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <h6>Document Submitted</h6>
+
+                          <input type="text" name="Document Submitted" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <h6>Account Verified :</h6>
+                          <input type="text" name="Account Verified" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        
+                        <div class="form-group">
+                          <h6>Upload Image :</h6>
+                          <input type="file" name="Upload Image">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button type="submit" class="btn btn-1">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5>Company Name :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                       <input type="text" name="name" value="Company Name">
-                    </form>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5>Company Website :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                      <input type="text" name="name" value="company-website">
-                    </form>
-                  </div>
-                </div>
-
-                
-
-                 <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5>Upload Image:</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                     <input type="file" name="name">
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5>Contact Person Name :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                      <input type="text" name="name" value="Company Rep">
-                    </form>
-                  </div>
-                </div>
-
-                  <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5> Wallet Address :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                     <input type="text" name="name" value="Pi Wallet Address">
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5>Contact Person Name :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                      <input type="text" name="name" value="Company Rep">
-                    </form>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5> Contact Person Phone :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                      <input type="text" name="name" value="Rep Phone">
-                    </form>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <h5> Contact Person Email :</h5>
-                  </div>
-                  <div class="col-md-7 text-secondary">
-                    <form>
-                      <input type="text" name="name" value="Rep Email">
-                    </form>
-                  </div>
-                </div>
-
-                <hr>
-
-                 <div class="row">
-                    <div class="col-md-5">
-                      <h5>Company Address :</h5>
-                    </div>
-                    <div class="col-md-7 text-secondary">
-                      <form>
-                        <input type="text" name="clientaddress" value="No.5 Ojuelegba Bustop Yaba">
-                      </form>
-                    </div>
-                </div>
-
-                <hr>
-
-                 <div class="row">
-                    <div class="col-md-5">
-                      <h5>Company Phone Number :</h5>
-                    </div>
-                    <div class="col-md-7 text-secondary"> 
-                      <form>
-                        <input type="text" name="clientphone" value="+234801234567">
-                      </form>
-                    </div>
-                </div>
-
-                 <hr>
-
-                  <div class="row">
-                    <div class="col-md-5">
-                      <h5>Document Submitted :</h5>
-                    </div>
-                    <div class="col-md-7 text-secondary">
-                      <form>
-                        <input type="text" name="clientphone" value="Not Submitted">
-                      </form>
-                    </div>
-                </div>
-                 <hr>
-                  <div class="row">
-                    <div class="col-md-5">
-                      <h5>Account Verified :</h5>
-                    </div>
-                    <div class="col-md-7 text-secondary">
-                      <form>
-                        <input type="text" name="clientphone" value="Not Verified" >
-                      </form>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="company-update">
-                        <a href="#" class="btn">Update</a>
-                    </div>
-                  </div>
-                </div>
-              
-            </div> 
-          </div>
-          
+            </div>
         </div>
         <div class="tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="card mb-3 content">
+            <div class="mb-3 content">
               <div class="cardHeader">
                 <h2>Account Settings</h2>
              
@@ -314,14 +234,14 @@
                   <div class="col-md-7 text-secondary">
                   </div>
                   <div class="col-md-5">
-                     <h5> Email :</h5>
+                     <h6> Email :</h6>
                   </div>
                   <div class="col-md-7 text-secondary">
                     <p class="btn btn-primary">Edit</p>
                   </div>
 
                   <div class="col-md-5">
-                     <h5> Password :</h5>
+                     <h6> Password :</h6>
                   </div>
                   <div class="col-md-7 text-secondary">
                     <p class="btn btn-primary">Edit</p>
@@ -333,7 +253,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="pills-notification" role="tabpanel" aria-labelledby="pills-contact-tab">       
-            <div class="card mb-3 content">
+            <div class="mb-3 content">
              
                 <div class="cardHeader">
                 <h2>Notifications Settings</h2>
@@ -363,14 +283,16 @@
           </div>
         </div>
         <div class="tab-pane fade" id="pills-api" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="card mb-3 content">
+          <div class=" mb-3 content">
                 <div class="row">
                   <div class="col-md-5">
                     <h5>Generate New API Key :</h5>
                   </div>
 
-                  <div class="col-md-7 text-secondary">
-                    <p class="btn btn-primary">Generate</p><input type="text" name="" disabled>
+                  <div class="col-md-7 form-group">
+                    <p class="btn btn-primary">Generate</p>
+                    <br/>
+                    <input type="text" name="" class="form-control">
                   </div>
               </div>
                <hr>
