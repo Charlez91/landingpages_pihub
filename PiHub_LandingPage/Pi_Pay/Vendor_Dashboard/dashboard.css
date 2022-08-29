@@ -201,8 +201,9 @@ a.btn{
 
 .status{
   position: relative;
-  padding: 2px 4px;
-  background: #f00;
+  padding: 0 4px;
+  /* background: #f00; */
+  background: #df4759;
   color: #fff;
   border-radius: 4px;
   font-size: 14px;
@@ -211,17 +212,31 @@ a.btn{
 }
 
 .delivered{
-  background: #8de02c;
+  background: #42ba96;
+  border-radius: 1rem;
+  margin-right: 2px;
+  padding: 0 7px;
 }
 
 .pending{
   background: #f9ca3f;
+  border-radius: 1rem;
+  margin-right: 2px;
+  padding: 0 7px;
 }
 .return{
-  background:#f00;
+  /* background:#f00; */
+  background: #df4759;
+
+  border-radius: 1rem;
+  margin-right: 2px;
+  padding: 0 7px;
 }
 .inprogress{
   background:#1795ce;
+  border-radius: 1rem;
+  margin-right: 1px;
+  padding: 0 7px;
 }
 
 
