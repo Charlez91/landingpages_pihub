@@ -135,7 +135,8 @@ h6 .new {
     font-size: 32px;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(4 4 4);
+    /* color: rgb(4 4 4); */
+    color: white;
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
@@ -184,10 +185,11 @@ a.btn{
 .user{
   position: relative;
   min-width: 50px;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
+  font-size:35px;
   border-radius: 40%;
-  overflow: hidden;
+  /* overflow: hidden; */
   cursor: pointer;
 }
 .user img{
