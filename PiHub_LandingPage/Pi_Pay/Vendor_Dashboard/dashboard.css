@@ -308,6 +308,13 @@ input[type=checkbox]{
   visibility: hidden;
 }
 
+.paymentDetail-form{
+  height: 35px;
+  width: 310px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
 label{
   cursor: pointer;
  text-indent: -9999px;
