@@ -235,7 +235,8 @@ a.btn{
   background:#1795ce;
   border-radius: 1rem;
   margin-right: 1px;
-  padding: 0 7px;
+  margin-top: 10px;
+  padding: 6px 10px;
 }
 
 
@@ -299,6 +300,16 @@ input[type=file]{
     background-color: #007bff;
     border-color: #007bff;
     border-radius: 15px;
+}
+
+.btn-refund{
+  color: #df4759;
+  background-color: #fff;
+  border-color: #df4759;
+
+}
+.btn-refund:hover{
+  color: #df4759;
 }
 
 
