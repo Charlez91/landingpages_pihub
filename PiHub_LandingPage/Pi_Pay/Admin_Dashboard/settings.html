@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Vendor DashBoard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font-Awesome Css -->
+<link  href="assets/dist/css/font-awesome.css" rel="stylesheet">
+<link  href="assets/dist/css/all.css" rel="stylesheet">
+<link  href="assets/dist/css/brands.css" rel="stylesheet">
+<link  href="assets/dist/css/solid.css" rel="stylesheet">
+<link  href="assets/dist/css/v5-font-face.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="dashboard.css" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="shortcut icon"  href="assets/dist/img/ppay2.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+      <span class="icon"><img class="center-block" src="assets/dist/img/ppay2.png" height="69" alt="pipay_user"></span>PiPay</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input class="form-control " type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        
+        <li class="nav-item text-nowrap">
+           
+          <a class="nav-link btn btn-primary p-2" href="#">Log out</a>
+        </li>
+      </ul>
+        <div class="user">
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </nav>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+      <div class="sidebar-sticky pt-5">
+        <ul class="nav flex-column">
+      
+          <li class="nav-item">
+            <a class="nav-link" href="gettingstarted.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+              Get Started
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transaction.html">
+              <span data-feather="shopping-cart"></span>
+              <span class="icon"><i class="fa fa-wallet"></i></span>
+              Transactions       
+            </a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="payout.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fa-regular fa-circle-down"></i></span>
+              Payout
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="payment.html">
+              <span data-feather="file"></span>
+              <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+              Payment page
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pos.html">
+              <span data-feather="file"></span>
+              <span class="icon"></span><i class="fa-solid fa-file-invoice-dollar"></i>
+              POS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="settings.html">
+              <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+              <span data-feather="users"></span>
+              Settings
+            </a>
+          </li>
+          
+        </ul>
+       
+        </ul>
+      </div>
+    </nav>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-md-4">
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-home" aria-selected="true">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-profile" aria-selected="false">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-notification" role="tab" aria-controls="pills-contact" aria-selected="false">Notification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-api" role="tab" aria-controls="pills-contact" aria-selected="false">Api keys and webhooks</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container">
+              <div class="col-lg-8 col-md-7">
+                <div class="cardHeader">
+                  <h2> Profile</h2>
+                </div>
+                <div class="contact-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <h6>Company name</h6>
+                          <input type="text" name="Company name"  class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Name</h6>
+                          <input type="text" name="Contact Person Name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Phone</h6>
+                          <input type="number" name="Contact Person Phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Company Address</h6>
+                          <input type="text" name="Company Address" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <h6>Company website</h6>
+                          <input type="text" name="Company website" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Wallet Address</h6>
+                          <input type="text" name="Wallet Address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Contact Person Email</h6>
+
+                          <input type="email" name="Contact Person Email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Company Phone Number</h6>
+
+                          <input type="text" name="Company Phone Number" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                  
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <h6>Document Submitted</h6>
+
+                          <input type="text" name="Document Submitted" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <h6>Account Verified :</h6>
+                          <input type="text" name="Account Verified" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        
+                        <div class="form-group">
+                          <h6>Upload Image :</h6>
+                          <input type="file" name="Upload Image">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button type="submit" class="btn btn-1">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="mb-3 content">
+              <div class="cardHeader">
+                <h2>Account Settings</h2>
+             
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h3> </h3>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                  </div>
+                  <div class="col-md-5">
+                     <h6> Email :</h6>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <p class="btn btn-primary">Edit</p>
+                  </div>
+
+                  <div class="col-md-5">
+                     <h6> Password :</h6>
+                  </div>
+                  <div class="col-md-7 text-secondary">
+                    <p class="btn btn-primary">Edit</p>
+                  </div>
+                </div>
+              </div>
+                
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-notification" role="tabpanel" aria-labelledby="pills-contact-tab">       
+            <div class="mb-3 content">
+             
+                <div class="cardHeader">
+                <h2>Notifications Settings</h2>
+                 
+              </div>
+              <div class="card-body">
+                 <hr>
+                  <div class="row">
+                     
+                    <div class="col-md-5">
+                      <h5>SMS :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                     <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+                    </div>
+                </div>
+                <hr>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <h5>Email Weekly Sales Report :</h5>
+                    </div>
+                    <div class="col-md-7 text-secondary">
+                     <input type="checkbox" id="sales"><label for="sales">Toggle</label>
+                    </div>
+                </div>
+          </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-api" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class=" mb-3 content">
+                <div class="row">
+                  <div class="col-md-5">
+                    <h5>Generate New API Key :</h5>
+                  </div>
+
+                  <div class="col-md-4">
+                    <input type="url" name="" id="" class="form-control"><button class="btn btn-primary">Generate</button>
+                    
+                  </div>
+              </div>
+              <br/>
+              <div class="row">
+                <div class="col-md-5">
+                  <h5>Callback URL:</h5>
+
+                </div>
+                <div class="col-md-4">
+                  <input type="url" name="" id="" class="form-control">
+
+                </div>
+                
+              </div>
+              <br/>
+              <div class="row">
+                <div class="col-md-5">
+                  <h5>Webhook URL:</h5>
+
+                </div>
+                <div class="col-md-4">
+                  <input type="url" name="" id="" class="form-control">
+
+                </div>
+              </div>
+              <br/>
+              <div class=" m-4 text-center">
+              <button class="btn btn-1 pt-2 px-4 text-center">Update</button>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </main>
+          
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script> -->
+        <!-- <script src="dashboard.js"></script> -->
+  </body>
+</html>
