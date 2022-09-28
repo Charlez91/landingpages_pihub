@@ -123,7 +123,7 @@ h6 .new {
 .navbar .form-control {
   padding: .75rem 1rem;
   border-width: 0;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border: 1px solid green;
   margin-left: 15px
 }
@@ -630,6 +630,54 @@ input[type=text]{
   grid-template-columns: repeat(1, 1fr);
 }
 
+}
+
+.pro-pagination-style ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .pro-pagination-style ul li {
+    margin: 0 4px;
+  }
+}
+
+.pro-pagination-style ul li a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #535353;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .pro-pagination-style ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+.pro-pagination-style ul li a.active, .pro-pagination-style ul li a:hover {
+  background-color: #262626;
+  color: #fff;
+  border: 1px solid #262626;
+}
+ 
+.pro-pagination-style ul li a .i {
+  line-height: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .pro-pagination-style ul li a .i {
+    line-height: 40px;
+    margin-left: 20px;
+  }
 }
 
 
