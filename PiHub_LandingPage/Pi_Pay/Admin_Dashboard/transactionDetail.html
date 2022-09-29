@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Vendor DashBoard</title>
+    <title>Admin DashBoard</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font-Awesome Css -->
-<link  href="assets/dist/css/font-awesome.css" rel="stylesheet">
-<link  href="assets/dist/css/all.css" rel="stylesheet">
-<link  href="assets/dist/css/brands.css" rel="stylesheet">
-<link  href="assets/dist/css/solid.css" rel="stylesheet">
-<link  href="assets/dist/css/v5-font-face.css" rel="stylesheet">
+<link  href="dist/css/font-awesome.css" rel="stylesheet">
+<link  href="dist/css/all.css" rel="stylesheet">
+<link  href="dist/css/brands.css" rel="stylesheet">
+<link  href="dist/css/solid.css" rel="stylesheet">
+<link  href="dist/css/v5-font-face.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -31,11 +31,11 @@
         }
       }
     </style>
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="./../Vendor_Dashboard/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
 <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
-  <span class="icon"><img class="center-block" src="assets/dist/img/ppay2.png" height="69" alt="pipay_user"></span>PiPay</a>
+  <span class="icon"><img class="center-block" src="dist/img/ppay2.png" height="69" alt="pipay_user"></span>PiPay</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -56,14 +56,7 @@
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
       <div class="sidebar-sticky pt-5">
         <ul class="nav flex-column">
-      
-          <li class="nav-item">
-            <a class="nav-link" href="gettingstarted.html">
-              <span data-feather="file"></span>
-              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-              Get Started
-            </a>
-          </li>
+    
           <li class="nav-item">
             <a class="nav-link " href="index.html">
               <span data-feather="file"></span>
@@ -88,17 +81,17 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="payment.html">
+            <a class="nav-link" href="company.html">
               <span data-feather="file"></span>
               <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
-              Payment page
+              Companies
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pos.html">
               <span data-feather="file"></span>
               <span class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
-              POS
+              Staff (For super admin )
             </a>
           </li>
           <li class="nav-item">
@@ -131,12 +124,17 @@
                         </p>
                         
                       </div>
-                      <p class="p-2">Reference</p>
-                      <p class="p-2">Channel</p>
-                      <p class="p-2">Fees</p>
-                      <p class="p-2">Paid At</p>
-                      <p class="p-2">Plan On</p>
-                      <p class="p-2">Message</p>
+                      <p class="p-1">Reference</p>
+                      <p class="p-1">User Email</p>
+                      <p class="p-1">Fees</p>
+                      <p class="p-1">Created date</p>
+                      <p class="p-1">Completed Date</p>
+                      <p class="p-1">Message</p>
+                      <p class="p-1">Price of Crypto at payment</p>
+                      <p class="p-1">Notification Status </p>
+                      <p class="p-1">Message</p>
+                      <p class="p-1">Blockchain link to payment</p>
+                      <p class="p-1">Status </p>
                     </div>
                     <div class="div2">
                       <div class="p-4">
@@ -144,12 +142,18 @@
   
                       </div>
                       <br/>
-                      <p class="p-2">1445844753512346</p>
-                      <p class="p-2">Card</p>
-                      <p class="p-2">NGN 850.00</p>
-                      <p class="p-2">May 19, 2019, 4:47PM</p>
-                      <p class="p-2">Premium Membership</p>
-                      <p class="p-2">Successful</p>
+                      <p class="p-1">1445844753512346</p>
+                      <p class="p-1">Card</p>
+                      <p class="p-1">NGN 850.00</p>
+                      <p class="p-1">May 19, 2019, 4:47PM</p>
+                      <p class="p-1">May 19, 2019, 4:47PM</p>
+                      <p class="p-1">Premium Membership</p>
+                      <p class="p-1">Successful</p>
+                      <p class="p-1">**********</p>
+                      <p class="p-1">***********</p>
+                      <p class="p-1">***********</p>
+                      <p class="p-1">Successful>
+                      
                     </div>
 
                   </div>
@@ -172,7 +176,7 @@
                 </div>
                 <div class="col-md-6  border border-right-0">
                   <div class="border m-2 p-2">
-                    <><button class="btn btn-refund"> <i class="fa-solid fa-rotate-left"></i> Refund customer</button></p>
+                    <button class="btn btn-refund"> <i class="fa-solid fa-rotate-left"></i> Refund customer</button></p>
 
                   </div>
                   <h6>Analytics</h6>
@@ -180,12 +184,12 @@
                     <div class="div1">
                       
                       <div class="p-2">
-                        <p > <span class="font-weight-bold">Card Type</span>  <br/>
+                        <p > <span class="font-weight-bold">Access Code</span>  <br/>
                          Visa Debit
                         </p>
                       </div>
                       <div class="p-2">
-                        <p><span class="font-weight-bold">Authorization</span> <br/>
+                      <p><span class="font-weight-bold">Access URL</span> <br/>
                           Auth
                         </p>
                       </div>
@@ -197,13 +201,13 @@
                     </div>
                     <div class="div2">
                       <div class="p-2">
-                        <p> <span class="font-weight-bold">Card Number</span><br/>
-                          408755757**44
+                        <p> <span class="font-weight-bold">Mode</span><br/>
+                          Mainnet
                         </p>
                       </div>
                       <div class="p-2">
-                        <p> <span class="font-weight-bold">IP Address</span> <br/>
-                          41.25
+                        <p> <span class="font-weight-bold">User_PiId</span> <br/>
+                          4155245242
                         </p>
                       </div>
                   </div>
@@ -216,7 +220,7 @@
           
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="dist/js/bootstrap.bundle.min.js"></script>
 
       
         <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>

@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Vendor DashBoard</title>
+    <title>Admin DashBoard</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
 
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font-Awesome Css -->
-<link  href="assets/dist/css/font-awesome.css" rel="stylesheet">
-<link  href="assets/dist/css/all.css" rel="stylesheet">
-<link  href="assets/dist/css/brands.css" rel="stylesheet">
-<link  href="assets/dist/css/solid.css" rel="stylesheet">
-<link  href="assets/dist/css/v5-font-face.css" rel="stylesheet">
+<link  href="dist/css/font-awesome.css" rel="stylesheet">
+<link  href="dist/css/all.css" rel="stylesheet">
+<link  href="dist/css/brands.css" rel="stylesheet">
+<link  href="dist/css/solid.css" rel="stylesheet">
+<link  href="dist/css/v5-font-face.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -31,16 +31,16 @@
         }
       }
     </style>
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="../Vendor_Dashboard/dashboard.css" rel="stylesheet">
 	  <link rel="stylesheet" type="text/css" href="./../css/style.css">
     
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="shortcut icon"  href="assets/dist/img/ppay2.png" />
+    <link rel="shortcut icon"  href="dist/img/ppay2.png" />
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
-      <span class="icon"><img class="center-block" src="assets/dist/img/ppay2.png" height="69" alt="pipay_user"></span>PiPay</a>
+      <span class="icon"><img class="center-block" src="dist/img/ppay2.png" height="69" alt="pipay_user"></span>PiPay</a>
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,13 +63,6 @@
         <ul class="nav flex-column">
       
           <li class="nav-item">
-            <a class="nav-link" href="gettingstarted.html">
-              <span data-feather="file"></span>
-              <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-              Get Started
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="index.html">
               <span data-feather="file"></span>
               <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
@@ -84,7 +77,6 @@
             </a>
           </li>
           
-          
           <li class="nav-item">
             <a class="nav-link" href="payout.html">
               <span data-feather="file"></span>
@@ -94,17 +86,17 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="payment.html">
+            <a class="nav-link" href="company.html">
               <span data-feather="file"></span>
               <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
-              Payment page
+              Company
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pos.html">
+            <a class="nav-link" href="staff.html">
               <span data-feather="file"></span>
               <span class="icon"></span><i class="fa-solid fa-file-invoice-dollar"></i>
-              POS
+              Staff(for super admin)
             </a>
           </li>
           <li class="nav-item">
@@ -148,68 +140,40 @@
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
-                          <h6>Company name</h6>
-                          <input type="text" name="Company name"  class="form-control" required>
+                          <h6>Staff's Name</h6>
+                          <input type="text" name="Staff's name"  class="form-control" required>
                         </div>
                         <div class="form-group">
-                          <h6>Contact Person Name</h6>
-                          <input type="text" name="Contact Person Name" class="form-control" required>
+                          <h6>Email</h6>
+                          <input type="email" name="Email"  class="form-control" required>
                         </div>
                         <div class="form-group">
-                          <h6>Contact Person Phone</h6>
-                          <input type="number" name="Contact Person Phone" class="form-control" required>
+                          <h6>Password</h6>
+                          <input type="password" name="Password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <h6>Address</h6>
+                          <input type="text" name="Address" class="form-control" required>
+                        </div>
+                        
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <h6>Company Name</h6>
+                          <input type="number" name="Company Name" class="form-control" required>
                         </div>
                         <div class="form-group">
                           <h6>Company Address</h6>
                           <input type="text" name="Company Address" class="form-control" required>
                         </div>
-                      </div>
-                      <div class="col-lg-6">
                         <div class="form-group">
-                          <h6>Company website</h6>
-                          <input type="text" name="Company website" class="form-control" required>
+                          
+                          <h6>Country</h6>
+                          <input type="text" name="Country" class="form-control" required>
                         </div>
-                        <div class="form-group">
-                          <h6>Wallet Address</h6>
-                          <input type="text" name="Wallet Address" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                          <h6>Contact Person Email</h6>
-
-                          <input type="email" name="Contact Person Email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                          <h6>Company Phone Number</h6>
-
-                          <input type="text" name="Company Phone Number" class="form-control" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                  
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <h6>Document Submitted</h6>
-
-                          <input type="text" name="Document Submitted" class="form-control" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <h6>Account Verified :</h6>
-                          <input type="text" name="Account Verified" class="form-control" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
                         
-                        <div class="form-group">
-                          <h6>Upload Image :</h6>
-                          <input type="file" name="Upload Image">
-                        </div>
+                        
+                        
                       </div>
                     </div>
                     <div class="row">
@@ -237,18 +201,22 @@
                   </div>
                   <div class="col-md-5">
                      <h6> Email :</h6>
+                     <input type="email" class="form-group form-control" name="email" placeholder="example@gmail.com" id="">
                   </div>
                   <div class="col-md-7 text-secondary">
                     <p class="btn btn-primary">Edit</p>
+                    
                   </div>
 
                   <div class="col-md-5">
                      <h6> Password :</h6>
+                     <input type="password" class="form-group form-control" name="email" placeholder="12345#$" id="">
                   </div>
                   <div class="col-md-7 text-secondary">
                     <p class="btn btn-primary">Edit</p>
                   </div>
                 </div>
+                <button class="btn btn-primary">Save</button>
               </div>
                 
           </div>
@@ -279,6 +247,7 @@
                     <div class="col-md-7 text-secondary">
                      <input type="checkbox" id="sales"><label for="sales">Toggle</label>
                     </div>
+                    <button class="btn btn-primary">Save</button>
                 </div>
           </div>
           </div>
@@ -330,7 +299,7 @@
           
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="dist/js/bootstrap.bundle.min.js"></script>
 
       
         <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>

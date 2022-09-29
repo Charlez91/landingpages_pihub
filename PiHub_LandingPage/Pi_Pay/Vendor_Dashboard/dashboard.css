@@ -6,6 +6,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  text-decoration-color: none;
+
+}
+
 :root{
   --bg-dark: #2b2c2f;
   }
@@ -128,8 +134,13 @@ h6 .new {
   margin-left: 15px
 }
 .navbar-dark .navbar-brand {
-    background-color: black;
+    background-color: white;
     color: #FFD700;
+    font-weight: 500;
+    font-size: 32px;
+}
+.navbar-dark .navbar-brand:hover {
+    color: black;
     font-weight: 500;
     font-size: 32px;
 }
@@ -682,4 +693,3 @@ input[type=text]{
 
 
 
-/*Media Query Ends*/
