@@ -324,11 +324,10 @@ input[type=file]{
 }
 
 
-input[type=checkbox]{
+/* input[type=checkbox]{
   height: 0;
   width: 0;
-  visibility: hidden;
-}
+} */
 
 .paymentDetail-form{
   height: 35px;

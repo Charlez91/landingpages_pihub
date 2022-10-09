@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Requesting Payout</title>
+    <title>Generating POS URL</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
 
@@ -37,36 +37,36 @@
   </head>
   <body>
     <main role="main" class="d-flex justify-content-center m-4">
-            <form class="card p-4" style="width: 22rem;">
-                <div style="border: 1px solid #563e70;" class="p-2">
-                    <h5 class="text-primary" >Request Payout with PiPay</h5>
-                </div>
-                <div class="form-group">
-                    <p class="font-weight-bold">Amount</p>
-                    <input type="number" name="Amount" placeholder="Enter the amount you want here" class="form-control">
-                    <small class="form-text text-muted">Avail Bal:$4000</small>
-                </div>
-                
-                <div class="form-group">
-                    <p class="font-weight-bold">Wallet Address</p>
-                    <select class="form-control">
-                        <option>Choose Wallet Address</option>
-                        <option>bvngfhfdgfrgnfdrgrdh</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <p class="font-weight-bold">Description</p>
-                    <textarea name="" id="" cols="30" rows="3"></textarea>
-                </div>
-                
-                <div class="form-check">
-                    <input type="checkbox"id="check" class="form-check-input">
-                    <p for="check">I agree to the term and condition </p>
-                    
-                </div>
-                <button class="btn btn-primary">Submit</button>
-                
-            </form>
+      <form class="card p-4" style="width: 22rem;">
+        <div style="border: 1px solid #563e70;" class="p-2">
+            <h5 class="text-primary text-center" >PiPay POS URL</h5>
+        </div>
+        <div class="form-group">
+            <p class="font-weight-bold">Reference</p>
+            <input type="text" name="Amount" placeholder="" class="form-control">
+        </div>
+        <div class="form-group">
+            <p class="font-weight-bold">Amount</p>
+            <input type="number" name="Amount" placeholder="Enter the amount you want here" class="form-control">
+            <small class="form-text text-muted">Avail Bal:$4000</small>
+        </div>
+        <div class="form-group">
+            <p class="font-weight-bold">Customer's Email</p>
+            <input type="email" name="Amount" placeholder="example@gmail.com" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <p class="font-weight-bold"> Price Per Pi</p>
+            <input class="form-control" type="text" name="" id="">
+        </div>
+        <div class="form-group">
+            <p class="font-weight-bold">Description</p>
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+        </div>
+        
+        <button class="btn btn-primary">Generate</button>
+        
+    </form>
       </div>
     </main>
     <!-- 
