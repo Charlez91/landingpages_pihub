@@ -292,7 +292,7 @@ a.btn{
 
 /*Toggle Button Css Start*/
 
-input[type=text]{
+/* input[type=text]{
   margin-top: 5px;
   margin-left: 20px;
   padding-top: 10px;
@@ -301,7 +301,7 @@ input[type=text]{
   width: 250px;
   border: 2px dotted #563e70;
   border-radius: 20px;
-}
+} */
 input[type=file]{
   margin-left: 30px;
 }
