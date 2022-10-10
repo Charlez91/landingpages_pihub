@@ -714,4 +714,13 @@ Footer Section
   font-size: 15rem;
 }
 
+.formcard{
+  width: 22rem;
+  border:1px solid #fff;
+  box-shadow:-1px -2px 4px 2px #563e70;
+  border-radius: 1rem;
+
+
+}
+
 
