@@ -112,8 +112,15 @@ h6 .new {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 .navbar .navbar-toggler {
-  top: .25rem;
-  right: 1rem;
+  top: 1rem;
+  right: 1.2rem;
+  color:black;
+  background-color:black;
+}
+
+.navbar-toggler-icon{
+  color: black;
+  background-color: black;
 }
 .bg-dark {
     background-color: #c8a2c8!important;
@@ -545,10 +552,11 @@ Footer Section
     margin-right: -15px;
     margin-left: -15px;
 }
-input[type=text]{
+
+.search-input{
     width: 170px;
     margin-left: -30px;
-  }
+}
 
  .navbar .form-control{
   margin-top: 20px;
@@ -586,10 +594,11 @@ input[type=text]{
     margin-right: -15px;
     margin-left: -15px;
 }
-input[type=text]{
+
+.search-input{
     width: 170px;
     margin-left: -30px;
-  }
+}
  }
 
  @media (max-width: 767.98px) {
@@ -632,10 +641,10 @@ input[type=text]{
     padding-top: 20px;
     margin-left: 170px;
   }
-  input[type=text]{
+  /* input[type=text]{
     width: 170px;
     margin-left: -30px;
-  }
+  } */
   .details .row {
     display: -ms-flexbox;
     display: flex;
