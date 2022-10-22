@@ -712,6 +712,12 @@ Footer Section
 
 .imagecon{
   font-size: 15rem;
+  
+}
+
+.bitimage{
+  width: 15rem;
+  height: 100px;
 }
 
 .formcard{
