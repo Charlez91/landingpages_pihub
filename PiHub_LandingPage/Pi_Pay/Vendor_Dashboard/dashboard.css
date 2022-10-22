@@ -723,4 +723,15 @@ Footer Section
 
 }
 
+.coinmage{
+  width: 20px;
+  height: 20px;
+}
+
+.copymage{
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
 
